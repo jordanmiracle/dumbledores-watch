@@ -19,6 +19,7 @@ package com.example.android.watchface.watchfacekotlin
 import android.graphics.Color
 import com.example.android.watchface.watchfacekotlin.model.AnalogWatchFaceStyle
 import com.example.android.watchface.watchfacekotlin.service.AbstractKotlinWatchFace
+import com.example.android.watchface.watchfacekotlin.service.AnalogWatchFaceStyleBuilder
 import com.example.android.watchface.watchfacekotlin.service.analogWatchFaceStyle
 
 /**
@@ -42,8 +43,11 @@ class AnalogDslWatchFace : AbstractKotlinWatchFace() {
                 hourHandRadiusRatio = 0.2f
                 minuteHandRadiusRatio = 0.5f
                 secondHandRadiusRatio = 0.9f
+                secondHandRadiusRatio = 0.8f
+
             }
-            watchFaceBackgroundImage {  }
+
+            watchFaceBackgroundImage { backgroundImageResource = R.drawable.zodiac_circle_black }
         }
 
     }
